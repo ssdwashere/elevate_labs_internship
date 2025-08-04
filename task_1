@@ -1,0 +1,38 @@
+C:\Users\intern>nmap -sS 192.168.0.1/24
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 19:49 +0530
+Nmap scan report for 192.168.0.1
+Host is up (0.0029s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+
+Nmap scan report for 192.168.0.105
+Host is up (0.010s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+
+Nmap scan report for 192.168.0.124
+Host is up (0.0017s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 105.76 seconds
+
+port 53 is used for dns - It translates human readable urls to ip addressess
+Potential vulnerabilities: DNS cache poisoning, DNS amplification attacks, or exploits like CVE-2020-12662 (SIGRed)
+
+port 80 is used for http
+Potential vulnerabilities: Default credentials (admin/admin), outdated firmware (CVE-2023-XXXX), or web interface vulnerabilities
+
+port 443 is used for https
+Potential vulnerabilities: Heartbleed (CVE-2014-0160) if old, or TLS vulnerabilities
+
+port 22 is used for ssh which is a file transfer service
+Potential vulnerabilities: Weak passwords, outdated OpenSSH (CVE-2021-41617), or allow root login
