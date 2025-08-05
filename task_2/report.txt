@@ -1,0 +1,5 @@
+This phishing email impersonates a Microsoft account deactivation notice. Key indicators of the scam include:
+Spoofed Sender: The email comes from a fake domain, micr0s0ft.com, instead of the official microsoft.com.
+Urgent Language: The subject line and body create a false sense of urgency, threatening to deactivate the account.
+Malicious Link: The "Confirm My Account" button links to a fraudulent URL (accounts-security-update.xyz), not a legitimate Microsoft page.
+Generic Content: The email lacks personalized details and contains minor grammatical errors, all common signs of a phishing attempt.
